@@ -1,5 +1,5 @@
-module "vpc" {
-  source                = "git::https://github.com/Prasadraju99/terraform-aws-vpc.git?ref=main" # define the moduel path
+module "vpc" {              # define the moduel path
+  source                = "git::https://github.com/Prasadraju99/terraform-aws-vpc.git?ref=main" 
   project_name          = var.project_name       # call the variables from main code
   environment           = var.environment
   common_tags           = var.common_tags
