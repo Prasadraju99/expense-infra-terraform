@@ -1,7 +1,7 @@
 module "ec2_instance" {
-  source  = "terraform-aws-modules/ec2-instance/aws"
+  source = "terraform-aws-modules/ec2-instance/aws"
 
-  ami = local.ami_id
+  ami  = local.ami_id
   name = local.resource_name
 
   instance_type          = "t3.micro"
@@ -12,7 +12,7 @@ module "ec2_instance" {
     var.common_tags,
     var.bastion_tags,
     {
-        Name = local.resource_name
+      Name = local.resource_name
     }
   )
 }

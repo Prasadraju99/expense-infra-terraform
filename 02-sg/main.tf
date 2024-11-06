@@ -109,7 +109,7 @@ resource "aws_security_group_rule" "frontend_bastion" {
 }
 
 # ansible allowing connection on 22 from the instances to access by mysql
-resource "aws_security_group_rule" "mysql_asible" {
+resource "aws_security_group_rule" "mysql_ansible" {
   type              = "ingress"
   from_port         = 22
   to_port           = 22
